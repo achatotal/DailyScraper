@@ -1,0 +1,83 @@
+$artnews-color: rgb(255,171,193);
+$bigThink-color: rgb(255, 243, 55);
+
+@font-face {
+    font-family: 'PPGatwick-Bold';
+    src: url('font/PPGatwick-Bold.otf');
+}
+
+body {
+    font-family: 'PPGatwick-Bold';
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: black;
+
+        &:hover {
+            color: $artnews-color;
+        }
+    }
+    div {
+        width: 2rem;
+    }
+}
+
+.wrapper-for-single-el {
+    margin: 0rem;
+    background-color:rgb(0, 0, 0);
+    margin: 0.1rem;
+    padding: 1rem;
+}
+
+.wrapper-for-multiple-el {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.article-image {
+    width: 100%;
+    height: auto;
+}
+
+.artnews {
+    .article-link {
+        color: $artnews-color;
+    }
+    .article-perex {
+        color: $artnews-color;
+    }
+    
+}
+
+.bigThink {
+    .article-link {
+        color: $bigThink-color;
+    }
+    .article-perex {
+        color: $bigThink-color;
+    }
+    
+}
+
+.article-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.article-perex {
+    padding-top: 1rem;
+}
+
+.news-title {
+    font-size: 2.5rem;
+    padding: 1rem;
+}

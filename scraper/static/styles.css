@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'PPGatwick-Bold';
+  src: url("font/PPGatwick-Bold.otf");
+}
+
+body {
+  font-family: 'PPGatwick-Bold';
+}
+
+.top-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.top-menu a:hover {
+  color: #ffabc1;
+}
+
+.top-menu div {
+  width: 2rem;
+}
+
+.wrapper-for-single-el {
+  margin: 0rem;
+  background-color: black;
+  margin: 0.1rem;
+  padding: 1rem;
+}
+
+.wrapper-for-multiple-el {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.artnews .article-link {
+  color: #ffabc1;
+}
+
+.artnews .article-perex {
+  color: #ffabc1;
+}
+
+.bigThink .article-link {
+  color: #fff337;
+}
+
+.bigThink .article-perex {
+  color: #fff337;
+}
+
+.article-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.article-perex {
+  padding-top: 1rem;
+}
+
+.news-title {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
