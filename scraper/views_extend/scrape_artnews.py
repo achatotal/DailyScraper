@@ -16,9 +16,7 @@ def scrape_artnews_funct():
     soup = BeautifulSoup(html_text, 'lxml')
     articles = soup.find_all('article')
 
-    n = 0
-
-    for article in articles:
+    for n, article in enumerate(articles):
 
         if article.find('a', class_ = 'c-title__link'):
             name = article.find('a', class_ = 'c-title__link').text.replace('  ', '')
@@ -72,5 +70,4 @@ def scrape_artnews_funct():
             perex = article.find('p', class_ = 'c-dek').text.replace('  ', '')
             news[len(news)-1]['perex'] = perex.strip()
 
-        n += 1
     return news
