@@ -8,10 +8,9 @@ import shutil
 
 
 def scrape_artnews_funct():
-    # Artnews
     news = []
-
-    # Addres
+    
+    # Addres Artnews
     html_text = requests.get('https://www.artnews.com/c/art-news/news/').text
     soup = BeautifulSoup(html_text, 'lxml')
     articles = soup.find_all('article')
